@@ -41,6 +41,8 @@ jobs:
         docker build -t jrfranco2/docker-graphql:latest .
     
     - name: Push docker image
+      env:
+        NEW_VERSION: ${{steps.version.outputs.version}}
       run: |
         docker push jrfranco2/docker-graphql:$NEW_VERSION
         docker push jrfranco2/docker-graphql:latest
