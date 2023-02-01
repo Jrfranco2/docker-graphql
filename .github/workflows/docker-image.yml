@@ -33,4 +33,4 @@ jobs:
     
     - name: Push docker image
       run: |
-        docker push jrfranco/docker-graphql:0.0.1 .
+        docker push jrfranco/docker-graphql:0.0.1
