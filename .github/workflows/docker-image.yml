@@ -30,3 +30,7 @@ jobs:
     - name: Build docker image
       run: |
         docker build -t jrfranco/docker-graphql:0.0.1 .
+    
+    - name: Push docker image
+      run: |
+        docker push jrfranco/docker-graphql:0.0.1 .
